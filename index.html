@@ -5,14 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>计量证书查询</title>
     <style>
+        body {
+            position: relative;
+        }
         img {
             width: 100%;
-            height: auto; /* 保持图片的宽高比 */
-            display: block; /* 去除图片下方的空白间隙 */
+            height: auto;
+            display: block;
+        }
+        .watermark {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 3em;
+            color: rgba(255, 255, 255, 0.5);
+            z-index: 1000;
+            pointer-events: none; /* 使水印不可点击 */
         }
     </style>
 </head>
 <body>
+    <div class="watermark">计量证书查询</div>
     <img src="a2.png" alt="图片">
 </body>
 </html>
